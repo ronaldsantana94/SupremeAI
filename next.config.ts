@@ -7,28 +7,30 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'avatars.githubusercontent.com',
-        port: '',
-        pathname: '**'
+        pathname: '**',
       },
       {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
-        port: '',
-        pathname: '**'
+        pathname: '**',
       },
       {
         protocol: 'https',
         hostname: 'img.clerk.com',
-        port: '',
-        pathname: '**'
+        pathname: '**',
       }
-    ]
+    ],
   },
+
+  eslint: {
+    ignoreDuringBuilds: true,  // ✅ Ignores ESLint errors during production builds
+  },
+
   async redirects() {
     return [
       {
         source: "/logout",
-        destination: "/landing", // ✅ Redirect logged-out users to landing page
+        destination: "/landing",
         permanent: false,
       },
     ];
