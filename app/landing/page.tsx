@@ -169,7 +169,7 @@ export default function Home() {
             <span className="font-bold text-xl"></span>
           </Link>
           <div className="flex items-center gap-6">
-            <Link href="/login">
+            <Link href="/signup">
               <Button variant="ghost">Sign In</Button>
             </Link>
             <Link href="/signup">
