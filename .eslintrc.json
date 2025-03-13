@@ -4,12 +4,14 @@
   "extends": [
     "next/core-web-vitals",
     "prettier",
+    "plugin:@typescript-eslint/recommended",
     "plugin:tailwindcss/recommended"
   ],
-  "plugins": ["tailwindcss"],
+  "plugins": ["@typescript-eslint", "tailwindcss"],
   "rules": {
     "tailwindcss/no-custom-classname": "off",
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
   },
   "settings": {
     "tailwindcss": {
