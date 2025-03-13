@@ -1,9 +1,8 @@
 'use client'
 
 import logo from "@/assets/logo.png";
-import resumePreview from "@/assets/resume-preview.jpg";
 import { Button } from "@/components/ui/button";
-import { Check, Star } from "lucide-react";
+import { Check, Star, Brain, Sparkles, SwitchCamera, Clock, Layers, Wand,ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import openaiLogo from '../logos/openai.svg';
@@ -15,7 +14,6 @@ import supremeaiDashboard from '@/assets/supremeai-dashboard.png';
 import { useState } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { FileText, Send, Brain, Video, Globe, Sparkles, SwitchCamera, Clock, Layers, Wand,ChevronDown, ChevronUp } from "lucide-react"
 import { motion } from "framer-motion";
 
 const faqs = [
@@ -38,37 +36,6 @@ const faqs = [
     {
       q: "What happens if I cancel my subscription?",
       a: "You’ll lose access to Pro features, but your data and chat history will remain available in your free account.",
-    },
-  ];
-
-  const pricingPlans = [
-    {
-      name: "Free",
-      price: "$0",
-      description: "Get started with basic AI features.",
-      features: [
-        "Access to GPT-3.5 & Claude 3 Haiku",
-        "Limited messages per day",
-        "Basic AI capabilities",
-        "No priority access",
-      ],
-      buttonText: "Get Started",
-      buttonLink: "/signup",
-      isPro: false,
-    },
-    {
-      name: "Pro",
-      price: "$19.99",
-      description: "Unlock full AI power with all models.",
-      features: [
-        "Access to GPT-4o, Gemini, Claude 3 Opus, and Grok",
-        "Unlimited AI interactions",
-        "Priority AI model updates",
-        "Advanced AI features",
-      ],
-      buttonText: "Upgrade to Pro",
-      buttonLink: "/pricing",
-      isPro: true,
     },
   ];
   
